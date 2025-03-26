@@ -1,14 +1,34 @@
-# React + Vite
+# ⏱️ Stopwatch Project
+This is a simple yet powerful **React.js** project for a stopwatch application. It allows you to track elapsed time, pause, resume, reset, and record multiple laps.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 **Features**
+- ⏲️ **Start, Pause, Resume, and Reset** the timer with intuitive buttons.
+- 🛑 **Pause/Resume** functionality to stop and continue the timer.
+- 🔁 **Lap Recording** to track multiple lap times.
+- ⏱️ **Elapsed Time Display** in `mm:ss` format.
+- 🎯 **Responsive Design** for seamless display across devices.
+- ⚡ **Fast and Efficient** with React hooks (`useState`, `useRef`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ **Technologies Used**
+- ✅ **React.js** (for building the stopwatch component)
+- 🎯 **TypeScript** (for type safety)
+- 🎨 **CSS** (for styling the stopwatch interface)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Stop-Watch
-# Stop-Watch
+---
+
+## 💡 **Installation and Setup**
+
+### ✅ **Prerequisites**
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### 📥 **Clone the Repository**
+Open your terminal and run:
+```bash
+git clone https://github.com/satabdimohanty/Stop-Watch.git
+cd Stopwatch

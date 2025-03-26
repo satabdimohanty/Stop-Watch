@@ -1,0 +1,151 @@
+/* Full-page container to center the stopwatch */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Removed background */
+}
+
+/* Larger stopwatch container for laptop */
+.stopwatch-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 70vw; /* 70% of the viewport width */
+  height: 60vh; /* 60% of the viewport height */
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #e3d9d9; /* White background for the container */
+  transition: 0.3s;
+}
+
+.stopwatch-container:hover {
+  box-shadow: 0 14px 28px rgba(222, 215, 215, 0.2);
+}
+
+/* Larger time display */
+.stopwatch-time {
+  font-size: 12vw; /* Responsive time size */
+  color: #222; /* Darker time color */
+  margin: 40px 0;
+}
+
+/* Button container with flexbox for alignment */
+.stopwatch-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Even spacing between buttons */
+  margin: 20px 0;
+}
+
+/* Styled buttons */
+.stopwatch-buttons button {
+  padding: 20px 50px; /* Larger button size */
+  font-size: 30px; /* Larger text */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stopwatch-buttons button:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+/* Button colors */
+.start-btn {
+  background-color: #2ecc71; /* Green */
+}
+
+.pause-btn {
+  background-color: #f39c12; /* Orange */
+}
+
+.resume-btn {
+  background-color: #3498db; /* Blue */
+}
+
+.reset-btn {
+  background-color: #e74c3c; /* Red */
+}
+
+.lap-btn {
+  background-color: #9b59b6; /* Purple */
+}
+
+/* Disabled button style */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Lap container styling */
+.laps-container {
+  width: 90%;
+  max-height: 200px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: #f5f5f5; /* Light background for lap section */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Scroll when there are many laps */
+  transition: 0.3s;
+}
+
+.laps-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Lap title */
+.laps-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Lap list styling */
+.laps-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.laps-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  color: #444;
+  transition: background 0.3s;
+}
+
+/* Alternate row background for better readability */
+.laps-container li:nth-child(even) {
+  background: #e7e7e7;
+}
+
+.laps-container li:hover {
+  background: #dcdcdc;
+}
+
+.laps-container li:last-child {
+  border-bottom: none;
+}
+
+/* Lap number */
+.laps-container li strong {
+  color: #2c3e50;
+  font-size: 20px;
+}
